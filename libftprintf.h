@@ -6,14 +6,18 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 16:10:17 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/24 16:58:10 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/24 18:07:04 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFTPRINTF_H
 # define LIBFTPRINTF_H
 
-# include "libft/libft.h"
+# include <unistd.h>
+# include <stdio.h>
+# include <stdlib.h>
+# include <string.h>
+# include <limits.h>
 
 int	ft_putchar(char c);
 int	ft_putstr(char *s);
