@@ -1,0 +1,99 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/09 17:34:10 by bde-luce          #+#    #+#             */
+/*   Updated: 2024/05/08 23:47:03 by bde-luce         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+/*char	*ft_strchr(char const *str, int c)
+{
+	while (*str)
+	{
+		if (*str == (char)c)
+			return ((char *)str);
+		str++;
+	}
+	if (*str == (char)c)
+		return ((char *)str);
+	else
+		return (NULL);
+}
+*/
+
+char	*ft_strchr(const char *s, int c)
+{
+	while (*s != (char)c && *s != '\0')
+		s++;
+	if (*s == '\0' && (char)c != '\0')
+		return (NULL);
+	else
+		return ((char *)s);
+}
+
+/*int	main(void)
+{
+	const char	s[50] = "banana";
+	int	c = 't' + 256;
+
+	printf("%s\n", ft_strchr(s, c));
+}
+*/
+
+/*static void		ft_print_result(char const *s)
+{
+	int		len;
+
+	len = 0;
+	while (s[len])
+		len++;
+	write(1, s, len);
+}
+
+static void		check_strchr(char *s, int c, int offset)
+{
+	char		*str;
+
+	if (!(str = ft_strchr(s, c)))
+		ft_print_result("NULL");
+	else
+	{
+		ft_print_result(str);
+		if (str != (s + offset))
+			ft_print_result("\nReturn value is false");
+	}
+}
+
+int				main(int argc, const char *argv[])
+{
+	char		str2[] = "bonjour";
+	int			arg;
+
+	alarm(5);
+	if (argc == 1)
+		return (0);
+	else if ((arg = atoi(argv[1])) == 1)
+		check_strchr(str2, 'b', 0);
+	else if (arg == 2)
+		check_strchr(str2, 'o', 1);
+	else if (arg == 3)
+		check_strchr(str2, 'j', 3);
+	else if (arg == 4)
+		check_strchr(str2, 's', 0);
+	else if (arg == 5)
+		check_strchr(str2, '\0', 7);
+	else if (arg == 6)
+	{
+		char	str3[] = "";
+
+		check_strchr(str3, '\0', 0);
+	}
+	return (0);
+}
+*/
