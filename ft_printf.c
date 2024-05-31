@@ -6,7 +6,7 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 15:37:48 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/31 16:48:03 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/31 16:49:45 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	ft_printf(const char *s, ...)
 	return (j);
 }
 
-int main(void)
+/*int main(void)
 {
 	//int a = -1;
 	//int b = 43;
@@ -57,4 +57,4 @@ int main(void)
 	//printf("%x\n", UINT_MAX);
 	//printf("%zi\n", write(1, NULL, 1));
 	//printf("%i\n", ft_putchar(NULL));
-}
+}*/
