@@ -6,7 +6,7 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 16:03:09 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/31 16:46:33 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/31 17:41:07 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_check_type(va_list x, char conv, int j)
 	else if (conv == 's')
 		j += ft_putstr(va_arg(x, char *));
 	else if (conv == 'p')
-		j += ft_putptr((unsigned long)va_arg(x, void *));
+		j += ft_putptr(va_arg(x, unsigned long));
 	else if (conv == 'd' || conv == 'i')
 		j += ft_putnbr(va_arg(x, int));
 	else if (conv == 'u')
