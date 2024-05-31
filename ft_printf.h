@@ -6,7 +6,7 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 16:10:17 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/31 13:38:55 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/31 17:10:46 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_putstr(char *s);
 int	ft_putptr(unsigned long ptr);
 int	ft_putnbr(int n);
 int	ft_putunbr(unsigned int n);
-int	ft_putnbrhex(char c,unsigned int n);
+int	ft_putnbrhex(char c, unsigned int n);
 int	ft_num_len_ptr(unsigned long i);
 int	ft_num_len_nbr(int i, int base);
 int	ft_num_len_unbr(unsigned int i, int base);

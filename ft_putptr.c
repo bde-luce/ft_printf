@@ -6,7 +6,7 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 18:08:02 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/28 11:58:18 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/31 17:12:40 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	ptr_exist(unsigned long ptr, int b)
 			ptr += 48;
 		else
 			ptr += 87;
-		write(1, &ptr, 1);	
+		write(1, &ptr, 1);
 	}
 	return (2 + ft_num_len_ptr(i));
 }

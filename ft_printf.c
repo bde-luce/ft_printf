@@ -6,7 +6,7 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 15:37:48 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/31 16:49:45 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/31 17:10:21 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@ int	ft_printf(const char *s, ...)
 {
 	int		i;
 	int		j;
-	va_list x;
-	
+	va_list	x;
+
 	i = 0;
 	j = 0;
 	va_start(x, s);
 	if (!s)
-		return(write(1, NULL, 1));
+		return (write(1, NULL, 1));
 	while (s[i])
 	{
 		if (s[i] != '%')
@@ -50,9 +50,11 @@ int	ft_printf(const char *s, ...)
 	//int i;
 	//int j;
 	
+	//i = printf("%X\n", -12345);
+	//j = ft_printf("%X\n", -12345);
 	//printf("%i\n%s\n%p\n", printf(NULL), (char*)0, (void*)0);
 	//ft_printf("%i\n%s\n%p\n", ft_printf(NULL), (char*)0, (void*)0);
-	//printf("i: %i\n", i);
+	//printf("%i\n%i\n", i, j);
 	//printf("%x\n", a);
 	//printf("%x\n", UINT_MAX);
 	//printf("%zi\n", write(1, NULL, 1));

@@ -6,7 +6,7 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 16:02:04 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/31 13:25:27 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/31 17:09:28 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_num_len_nbr(int i, int base)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (i == -2147483648)

@@ -6,7 +6,7 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 16:01:20 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/24 18:11:29 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/31 17:09:38 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_num_len_ptr(unsigned long i)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	while (i > 0)
