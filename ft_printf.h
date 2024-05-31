@@ -6,7 +6,7 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 16:10:17 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/31 17:10:46 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/31 17:15:03 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdlib.h>
 # include <string.h>
 # include <limits.h>
+# include <stdarg.h>
 
 int	ft_putchar(char c);
 int	ft_putstr(char *s);
