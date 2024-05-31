@@ -6,11 +6,11 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 16:02:49 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/24 17:15:39 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/24 18:11:42 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(int n)
 {

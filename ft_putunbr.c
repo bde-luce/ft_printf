@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_num_len_nbr.c                                   :+:      :+:    :+:   */
+/*   ft_putunbr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/24 16:02:04 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/31 13:25:27 by bde-luce         ###   ########.fr       */
+/*   Created: 2024/05/31 12:22:58 by bde-luce          #+#    #+#             */
+/*   Updated: 2024/05/31 13:29:41 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_num_len_nbr(int i, int base)
+int	ft_putunbr(unsigned int n)
 {
-	int count;
+	unsigned int	i;
 
-	count = 0;
-	if (i == -2147483648)
-		return (11);
-	if (i <= 0)
+	if (n < 0)
+		ft_putunbr(UINT_MAX + (n + 1));
+	i = n;
+	if (n > 9)
 	{
-		i *= -1;
-		count++;
+		ft_putunbr(n / 10);
+		ft_putunbr(n % 10);
 	}
-	while (i > 0)
+	else
 	{
-		i /= base;
-		count++;
+		n += 48;
+		write(1, &n, 1);
 	}
-	return (count);
+	return (ft_num_len_unbr(i, 10));
 }

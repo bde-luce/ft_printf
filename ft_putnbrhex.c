@@ -6,16 +6,18 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 16:49:41 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/24 17:16:14 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/31 13:40:42 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
-int	ft_putnbrhex(char c, int n)
+int	ft_putnbrhex(char c, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
+	if (n < 0)
+		ft_putnbrhex(c, UINT_MAX + (n + 1));
 	i = n;
 	if (n > 15)
 	{
@@ -33,5 +35,5 @@ int	ft_putnbrhex(char c, int n)
 				n += 55;
 		write(1, &n, 1);
 	}
-	return (ft_num_len_nbr(i, 16));
+	return (ft_num_len_unbr(i, 16));
 }

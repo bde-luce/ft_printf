@@ -6,11 +6,11 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 16:03:09 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/24 17:13:27 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/31 16:46:33 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_check_type(va_list x, char conv, int j)
 {
@@ -19,14 +19,11 @@ int	ft_check_type(va_list x, char conv, int j)
 	else if (conv == 's')
 		j += ft_putstr(va_arg(x, char *));
 	else if (conv == 'p')
-	{
-		write(1, "0x", 2);
-		j += ft_putptr((unsigned long)va_arg(x, void *)) + 2;
-	}
+		j += ft_putptr((unsigned long)va_arg(x, void *));
 	else if (conv == 'd' || conv == 'i')
 		j += ft_putnbr(va_arg(x, int));
 	else if (conv == 'u')
-		j += ft_putnbr(va_arg(x, unsigned int));
+		j += ft_putunbr(va_arg(x, unsigned int));
 	else if (conv == 'x')
 		j += ft_putnbrhex('x', va_arg(x, unsigned int));
 	else if (conv == 'X')

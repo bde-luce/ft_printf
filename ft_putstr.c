@@ -6,11 +6,11 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 16:00:23 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/24 17:15:01 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/26 22:44:55 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 static size_t	pf_strlen(const char *s)
 {
@@ -25,7 +25,10 @@ static size_t	pf_strlen(const char *s)
 int	ft_putstr(char *s)
 {
 	if (!s)
-		return (0);
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
 	write(1, s, pf_strlen(s));
 	return (pf_strlen(s));
 }

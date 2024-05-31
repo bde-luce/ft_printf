@@ -6,11 +6,11 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 16:01:20 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/24 17:13:16 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/24 18:11:29 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_num_len_ptr(unsigned long i)
 {
