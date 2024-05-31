@@ -6,7 +6,7 @@
 /*   By: bde-luce <bde-luce@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 18:08:02 by bde-luce          #+#    #+#             */
-/*   Updated: 2024/05/31 17:12:40 by bde-luce         ###   ########.fr       */
+/*   Updated: 2024/05/31 17:29:24 by bde-luce         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,7 @@ static int	ptr_exist(unsigned long ptr, int b)
 int	ft_putptr(unsigned long ptr)
 {
 	if (!ptr)
-	{
-		write(1, "(nil)", 5);
-		return (5);
-	}
+		return (write(1, "(nil)", 5));
 	else
 		return (ptr_exist(ptr, 0));
 }
