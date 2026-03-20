@@ -1,4 +1,4 @@
-# 📚 ft_printf
+# 🖨️ ft_printf
 
 A custom implementation of the `printf` function developed as part of the 42 curriculum.
 
